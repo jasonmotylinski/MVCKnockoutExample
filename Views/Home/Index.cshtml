@@ -1,0 +1,12 @@
+﻿@using MVCKnockoutExample.Extensions
+@model MVCKnockoutExample.Models.Home.ExampleViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<label>Bound element</label>: <span data-bind="text: description"></span>
+
+@Html.KOModelDataFor(m => m)
+<script type="text/javascript" src="@Url.Content("~/Scripts/home.js")"></script>
